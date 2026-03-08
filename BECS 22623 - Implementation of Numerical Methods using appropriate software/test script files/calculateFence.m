@@ -1,0 +1,15 @@
+function [L, perimeter] = calculateFence(W, A)
+    % Calculate the length L
+    L = 2 * A / W; 
+    
+    % Calculate the height of the triangle
+    H = (A - L * W) / (0.5 * W); 
+    
+    % Total fence length (perimeter)
+    perimeter = 2 * L + 2 * W + 2 * sqrt((W/2)^2 + H^2);
+end
+
+
+
+
+
